@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: js-app
+  labels:
+    app: js-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: js-app
+  template:
+    metadata:
+      labels:
+        app: js-app
+    spec:
+      containers:
+      - name: js-app
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        ports:
+        - containerPort: 32000

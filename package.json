@@ -4,7 +4,7 @@
   "description": "Simple JavaScript app",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=8080",
+    "start": "live-server --port=32000",
     "test": "jest"
   },
   "devDependencies": {
