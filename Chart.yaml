@@ -1,5 +1,0 @@
-apiVersion: v2
-name: js-app
-description: A Helm chart for deploying js-app
-version: 0.1.0
-appVersion: "1.0.0"
